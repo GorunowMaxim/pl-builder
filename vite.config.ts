@@ -7,6 +7,8 @@ export default defineConfig({
   base: '/pl-builder',
   resolve: {
     alias: {
+      app: '/src/app/*',
+      pages: '/src/pages/*',
       widgets: '/src/widgets/*',
       features: '/src/features/*',
       enteties: '/src/enteties/*',
