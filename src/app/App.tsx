@@ -1,12 +1,17 @@
+import { RedactorPage } from "pages/redactorPage";
 
-import './App.css'
+import { ThemeProvider } from "./providers/themeProvider";
 
-function App() {
+import "./styles/styles.scss";
 
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <ThemeProvider>
+      <div className="wrapper">
+        <RedactorPage />
+      </div>
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
