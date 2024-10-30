@@ -1,15 +1,15 @@
-import { useContext } from "react";
-
-import { ChangeAppTheme } from "features/change-theme";
-import { ThemeContext } from "shared/lib/theme";
+import { ChangeAppTheme } from "features/changeTheme";
+import { ShowPreview } from "features/showPreview";
 
 import "./styles.scss";
 
 export const Header = () => {
-  const { theme } = useContext(ThemeContext);
   return (
-    <header className={`header header_${theme}`}>
-      <ChangeAppTheme />
+    <header className="header">
+      <div className="header-wrapper">
+        <ShowPreview />
+        <ChangeAppTheme />
+      </div>
     </header>
   );
 };
